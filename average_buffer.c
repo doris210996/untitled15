@@ -81,7 +81,7 @@ static  int prevIndex(AverageBuffer* buff){
     int prev = buff->head - 1;
     if (prev <= 0)
     {
-        prev = buff->capacity;
+        prev = buff->capacity-1;
     }
     return prev;
 }
